@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Date Section */
+.date-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.nav-btn {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    font-weight: 600;
+}
+
+.nav-btn:hover {
+    background: #357abd;
+    transform: scale(1.05);
+}
+
+.nav-btn:active {
+    transform: scale(0.98);
+}
+
+.date-display {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    min-width: 220px;
+    letter-spacing: 0.5px;
+}
+
+/* Reading Sections */
+.reading-section {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ot-section {
+    background: #fef3e2;
+    border: 2px solid #f0d09f;
+}
+
+.nt-section {
+    background: #e8f4f8;
+    border: 2px solid #a8d8e8;
+}
+
+.reading-section h2 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.reading-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .content {
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .date-display {
+        font-size: 16px;
+        min-width: 180px;
+    }
+
+    .reading-text {
+        font-size: 18px;
+    }
+
+    .nav-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
