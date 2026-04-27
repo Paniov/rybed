@@ -132,6 +132,10 @@ class BibleReadingApp {
     attachEventListeners() {
         document.getElementById('prevBtn').addEventListener('click', () => this.previousDay());
         document.getElementById('nextBtn').addEventListener('click', () => this.nextDay());
+        document.getElementById('todayBtn').addEventListener('click', () => {
+            this.setCurrentDate(new Date());
+            this.updateDisplay();
+        });
     }
 
     showError(message) {
